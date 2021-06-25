@@ -52,8 +52,9 @@ public class Loginservlet extends HttpServlet {
 		try
 		{
 			//String connectionUrl = "jdbc:sqlserver://HYL-777749\\SQL2K2019DEV:1433;databaseName=MYDB;user=hsi;password=wstinol";
-			Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE","MYDB","admin");
-			//Connection con=DriverManager.getConnection(connectionUrl);
+			//Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE","MYDB","admin");
+			String connectionUrl = System.getenv("JDBC_DATABASE_URL");
+                        Connection con=DriverManager.getConnection(connectionUrl);
 				if(con==null)
 					out.println("connect not created");
 				else
