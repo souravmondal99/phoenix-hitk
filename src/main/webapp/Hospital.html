@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hospital Bed Booking</title>
+    <link rel="stylesheet" href="mainmenu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--Fontawesome CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!--Custom styles-->
+    <link rel="stylesheet" type="text/css" href="registration.css">
+    <link rel="stylesheet" href="mainmenu.css">
+    <style>
+        table{
+            font-weight: bolder;
+        }
+        caption{
+            font-weight: bolder;
+            font-variant: small-caps;
+            font-size: 30px;
+        }
+        th{
+            background: #f5ba1a;
+        }
+        td,th{
+            padding: 1% 1%;
+            width: 10%;
+            text-align: center;
+        }
+    </style>
+
+
+</head>
+<body>
+        <div class="nav">
+            <div class="logo">
+                <h4>Phoenix HealthCare</h4>
+            </div>
+            <div class="links">
+                <a href="#" class="mainlink">Covid-19 Updates</a>
+                <a href="#">Help</a>
+                <a href="#">About</a>
+                <a href="#">Contact Us</a>
+                <a class="btn" href="MainMenu.html">Back  to Dashboard</a>
+                <a class="btn" href="index.html">Log Out</a>
+            </div>
+        </div>
+        <table border="1" align="center" style="float: left; width: 40%; height: 50%; margin: 1% 5%">
+            <caption>Hospital Names</caption>
+            <tr>
+                <th>Hospital ID</th>
+                <th>Hospital Name</th>
+                <th>Contact No</th>
+                <th>Isolation Beds</th>
+                <th>Normal Beds</th>
+                <th>Ventilators</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td class="hos_name">AMRI Hospital,Dhakuria</td>
+                <td>9834327463</td>
+                <td class="covid">3</td>
+                <td class="normal">11</td>
+                <td class="ventilator">32</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td class="hos_name">AMRI Hospital, Mukundupur</td>
+                <td>9746348763</td>
+                <td class="covid">3</td>
+                <td class="normal">13</td>
+                <td class="ventilator">23</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td class="hos_name">AMRI Hospital, SaltLake</td>
+                <td>9846536674</td>
+                <td class="covid">12</td>
+                <td class="normal">7</td>
+                <td class="ventilator">20</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td class="hos_name">Peerless Hospital</td>
+                <td>9832635627</td>
+                <td class="covid">0</td>
+                <td class="normal">4</td>
+                <td class="ventilator">32</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td class="hos_name">DESUN Hospital</td>
+                <td>9836372367</td>
+                <td class="covid">5</td>
+                <td class="normal">7</td>
+                <td class="ventilator">30</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td class="hos_name">ILS Dumdum</td>
+                <td>9834327463</td>
+                <td class="covid">9</td>
+                <td class="normal">10</td>
+                <td class="ventilator">2</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td class="hos_name">North City Hospital</td>
+                <td>9746348763</td>
+                <td class="covid">5</td>
+                <td class="normal">19</td>
+                <td class="ventilator">0</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td class="hos_name">CMRI</td>
+                <td>9846536674</td>
+                <td class="covid">10</td>
+                <td class="normal">10</td>
+                <td class="ventilator">32</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td class="hos_name">Divine Nursing Home</td>
+                <td>9832635627</td>
+                <td class="covid">6</td>
+                <td class="normal">19</td>
+                <td class="ventilator">12</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td class="hos_name">Fortis Hospital</td>
+                <td>9836372367</td>
+                <td class="covid">0</td>
+                <td class="normal">11</td>
+                <td class="ventilator">42</td>
+            </tr>
+        </table>
+
+        <div class="wrapper" style="box-shadow: 4px 30px 50px rgba(0, 0, 0, 0.1); float: right; margin: 5% 3% 10% 0%;">
+            
+        <h2><u>
+	            Bed Booking Form</u></h2>
+	        <div class=" form-conteniar">
+	            <form name="myForm" method="get">
+	                
+	                <div class="input-name">
+                    	<i class="fa fa-user email"></i>
+                    	<input type="text" name="patientname" placeholder="Patient's name" required class="text-name">
+                	</div>
+                	<div class="input-name">
+                    	<i class="fa fa-user email"></i>
+                    	<input type="number" name="contact" placeholder="Contact No." required class="text-name">
+                	</div>
+                	<div class="input-name">
+                    	<p>Booking for: </p>
+                    	<i class="fa fa-user email"></i>
+                    	<select name="bed" class="text-name" id="bed" required onchange="getAvail()">
+                    		<option disabled selected>----Select a Category----</option>
+                    		<option>Isolation Bed</option>
+                    		<option>Normal Bed</option>
+                    		<option>Ventilators</option>
+                    	</select>
+                    	<!--input type="number" name="contact" placeholder="Contact No." required class="text-name"-->
+                	</div>
+                	<div class="input-name">
+                		<p id="text"></p>
+                    	<i class="fa fa-user email"></i>
+                    	<select id="names" required class="text-name"></select>
+                	</div>
+	                <!--div class="form-group"-->
+	                    <!--input type="button" onclick="location.href='index.html';" value="Go Back" class="btn login_btn" style="margin-right: 10px;"-->
+	                    <input type="submit" value="Book a Bed" onclick="book()" class="button float-right login_btn" >
+	                <!--/div-->
+
+	                <!--div class="d-flex justify-content-center links">
+	                    Existing User ?<a href="login.html">Login</a>
+	                </div-->
+            	</form>
+        	</div>
+    	</div>
+
+        <br><br>
+
+        <div class="footer" style="clear: both">
+            <h2>Phoenix HealthCare</h2>
+      <div class="footerlinks">
+        <a href="#" class="mainlink">Covid-19 Updates</a>
+        <a href="#">Help</a>
+        <a href="#">About</a>
+        <a href="#">Contact Us</a>
+        <a href="index.html">Log Out</a>
+      </div>
+        </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+            AOS.init();
+    </script>
+</body>
+<script type="text/javascript">
+	function getAvail()
+	{
+		var bed = document.getElementById("bed")
+		var val = bed.value
+		name_dropdown = document.getElementById("names")
+        len = name_dropdown.options.length
+        if(len==0)
+            { 
+            }
+        else{
+            for(i=len-1;i>=0;i--)
+            {
+                name_dropdown.options[i]=null
+            }
+        }
+		if(val=="Isolation Bed")
+		{
+			text = document.getElementById("text")
+			text.innerHTML = "Hospitals with Covid Bed: "
+			covid = document.getElementsByClassName("covid")
+			for(i=0;i<covid.length;i++)
+			{
+				covid_bed = covid[i].innerHTML
+				if(covid_bed!=0)
+				{
+					option = document.createElement("option");
+                	option.text = document.getElementsByClassName("hos_name")[i].innerHTML
+                	names.add(option)
+				}
+			}
+		}else if(val=="Normal Bed")
+		{
+			text = document.getElementById("text")
+			text.innerHTML = "Hospitals with Normal Bed: "
+			normal = document.getElementsByClassName("normal")
+			for(i=0;i<normal.length;i++)
+			{
+				normal_bed = normal[i].innerHTML
+				//alert(normal_bed)
+				if(normal_bed!=0)
+				{
+					option = document.createElement("option");
+                	option.text = document.getElementsByClassName("hos_name")[i].innerHTML
+                	names.add(option)
+				}
+			}
+		}
+		else
+		{
+			text = document.getElementById("text")
+			text.innerHTML = "Hospitals With Ventilators: "
+			ventilator = document.getElementsByClassName("ventilator")
+			for(i=0;i<ventilator.length;i++)
+			{
+				ventilator_bed = ventilator[i].innerHTML
+				//alert(normal_bed)
+				if(ventilator_bed!=0)
+				{
+					option = document.createElement("option");
+                	option.text = document.getElementsByClassName("hos_name")[i].innerHTML
+                	names.add(option)
+				}
+			}
+		}
+	}
+	function book(){
+		var x = document.forms["myForm"]["patientname"].value;
+	  if (x == "") 
+  	    alert("Fill Up the form");
+  	  else
+      	alert("Booking Confirmed!!");
+    }
+</script>
+</html>

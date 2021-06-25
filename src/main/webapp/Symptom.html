@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HealthCare</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <!--link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"-->
+    <link rel="stylesheet" href="symptom.css">
+    <style>
+        table{
+            font-weight: bolder;
+        }
+        caption{
+            font-weight: bolder;
+            font-variant: small-caps;
+            font-size: 30px;
+        }
+        th{
+            background: #f5ba1a;
+        }
+        td,th{
+            padding: 1% 1%;
+            width: 10%;
+            text-align: center;
+        }
+        .button{
+          color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="nav">
+      <div class="logo">
+          <h4>Phoenix HealthCare</h4>
+      </div>
+      <div class="links">
+          <a href="#" class="mainlink">Covid-19 Updates</a>
+          <a href="#">Help</a>
+          <a href="#">About</a>
+          <a href="#">Contact Us</a>
+          <a class="btn" href="MainMenu.html">Back to Dashboard</a>
+          <a class="btn" href="index.html">Log Out</a>
+      </div>
+  </div>
+
+    <!-- LANDING PAGE -->
+
+    <table border="1" align="center" style="float: left; width: 40%; height: 50%; margin: 1% 5%">
+            <caption>Disease Symptoms</caption>
+            <tr>
+                <th>Disease Names: </th>
+                <th>Symptoms</th>
+            </tr>
+            <tr>
+                <td>COVID-19</td>
+                <td>
+                  <ul>
+                    <li class="covid" value="fever">Fever</li>
+                    <li class="covid" value="cough">Dry cough</li>
+                    <li class="covid" value="tiredness">Tiredness</li>
+                    <li class="covid" value="breathlessness">Difficulty breathing or shortness of breath</li>
+                    <li class="covid" value="chest_pain">Chest pain or pressure</li>
+                    <li class="covid" value="loss_of_speech_or_movement">Loss of speech or movement</li>
+                    <li class="covid" value="diarrhoea">Diarrhoea</li>
+                    <li class="covid" value="loss_of_taste_and_smell">Loss of taste or smell</li>
+                  </ul>
+                </td>   
+            </tr>
+            <tr>
+                <td>Malaria</td>
+                <td>
+                  <ul>
+                    <li class="malaria" value="fever">Fever</li>
+                    <li class="malaria" value="headache">Headache</li>
+                    <li class="malaria" value="vomiting">Vomiting</li>
+                    <li class="malaria" value="muscle_pain">Muscle Pains</li>
+                    <li class="malaria" value="diarrhoea">Diarrhoea</li>
+                  </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Dengue</td>
+                <td>
+                  <ul>
+                    <li class="denque" value="fever">Fever</li>
+                    <li class="denque" value="nausea">Nausea</li>
+                    <li class="denque" value="headache">Headache</li>
+                    <li class="denque" value="vomiting">Vomiting</li>
+                    <li class="denque" value="rash">Rash</li>
+                    <li class="denque" value="aches">Aches and pains (eye pain, typically behind the eyes, muscle, joint, or bone pain)</li>
+                  </ul>
+                </td>
+            </tr>
+            
+            
+            
+        </table>
+        
+   <div class="wrapper" style="box-shadow: 4px 30px 50px rgba(0, 0, 0, 0.1); float: right;  margin: 5% 3% 5% 0%;">
+        <h2>
+           Submit your Symptoms</h2>
+        <div class=" form-conteniar">
+            <form action="AppointDocCounsellor.html">
+                <label class="mainbox"><p>Fever</p>
+                    <input type="checkbox" class="symptom" value="fever">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="mainbox"><p>Dry cough</p>
+                   
+                    <input type="checkbox" class="symptom" value="cough">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="mainbox"><p>Tiredness</p>
+                    <input type="checkbox" class="symptom" value="tiredness">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="mainbox"><p>Difficulty breathing or shortness of breath</p>
+                    
+                   
+                    <input type="checkbox" class="symptom" value="breathlessness">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="mainbox"><p>Chest pain or pressure</p>
+                    <input type="checkbox" class="symptom" value="chest_pain">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="mainbox"><p>Loss of taste or smell</p>
+                    <input type="checkbox" class="symptom" value="loss_of_taste_and_smell">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="mainbox"><p>Loss of speech or movement</p>
+                    <input type="checkbox" class="symptom" value="loss_of_speech_or_movement">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="mainbox"><p>Diarrhoea</p>
+                    <input type="checkbox" class="symptom" value="diarrhoea">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="mainbox"><p>Headache</p>
+                    <input type="checkbox" class="symptom" value="head_aches">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="mainbox"><p>Vomiting</p>
+                    <input type="checkbox" class="symptom" value="vomiting">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="mainbox"><p>Muscle Pains</p>
+                    <input type="checkbox" class="symptom" value="muscle_pain">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="mainbox"><p>Nausea</p>
+                    <input type="checkbox" class="symptom" value="nausea">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="mainbox"><p>Rash</p>
+                    <input type="checkbox" class="symptom" value="nausea">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="mainbox"><p>Aches and pains (eye pain, typically behind the eyes, muscle, joint, or bone pain)</p>
+                    <input type="checkbox" class="symptom" value="aches">
+                    <span class="checkmark"></span>
+                  </label>
+                  
+                <!--div class="form-group"-->
+                    <input type="submit" value="Submit" onclick="checkSymptom()" class="button login_btn">
+                <!--/div-->
+            </form>
+        </div>
+    </div>
+
+    <!-- ABOUT SECTION -->
+
+    <div class="footer" style="clear: both;">
+      <h2>Phoenix HealthCare</h2>
+        <div class="footerlinks">
+            <a href="#" class="mainlink">Covid-19 Updates</a>
+            <a href="#">Help</a>
+            <a href="#">About</a>
+            <a href="#">Contact Us</a>
+            <a class="btn" href="index.html">Log Out</a>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+<script type="text/javascript">
+  function checkSymptom()
+  {
+    var c1=0
+    var c2=0
+    var c3=0
+    checkboxes = document.getElementsByClassName("symptom")
+    checkmark = document.getElementsByTagName("p")
+    for(i=0;i<checkboxes.length;i++)
+    {
+      //alert(checkboxes[i].checked)
+      if(checkboxes[i].checked==true)
+      {
+        val=checkmark[i].innerHTML
+        covid = document.getElementsByClassName("covid")
+        len1 = covid.length
+        for(j=0;j<len1;j++)
+        {
+          if(covid[j].innerHTML==val)
+          {
+            c1=c1+1
+          }
+        }
+        malaria = document.getElementsByClassName("malaria")
+        len2 = malaria.length
+        for(j=0;j<len2;j++)
+        {
+          if(malaria[j].innerHTML==val)
+          {
+            c2=c2+1
+          }
+        }
+        dengue = document.getElementsByClassName("dengue")
+        len3 = dengue.length
+        for(j=0;j<len3;j++)
+        {
+          if(dengue[j].innerHTML==val)
+          {
+            c3=c3+1
+          }
+        }
+      }
+    }
+    if((c1 === c2 && c1 === c3) || (c1==c2) || (c1==c3) || (c2==c3))
+    {
+      alert("You need to consult a doctor")
+    }
+    else{
+      max = Math.max(c1,c2,c3)
+      if(max==c1)
+      {
+        alert("You may be infected with Covid")
+      }
+      else if(max==c2)
+      {
+        alert("You may be infected with Malaria")
+      }
+      else if(max==c3)
+      {
+        alert("You may be infected with Denque")
+      }
+    }
+  }
+</script>
+</html>

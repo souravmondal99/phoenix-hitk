@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Appointment Page</title>
+    <link rel="stylesheet" href="mainmenu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--Fontawesome CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!--Custom styles-->
+    <link rel="stylesheet" type="text/css" href="registration.css">
+    <link rel="stylesheet" href="mainmenu.css">
+    <style>
+        table{
+            font-weight: bolder;
+        }
+        caption{
+            font-weight: bolder;
+            font-variant: small-caps;
+            font-size: 30px;
+        }
+        th{
+            background: #f5ba1a;
+        }
+        td,th{
+            padding: 1% 1%;
+            width: 10%;
+            text-align: center;
+        }
+        #names{
+            width: 100%;
+            padding: 1% 2%;
+        }
+    </style>
+
+
+</head>
+<body>
+        <div class="nav">
+            <div class="logo">
+                <h4>Pheonix HealthCare</h4>
+            </div>
+            <div class="links">
+                <a href="#" class="mainlink">Covid-19 Updates</a>
+                <a href="#">Help</a>
+                <a href="#">About</a>
+                <a href="#">Contact Us</a>
+                <a class="btn" href="MainMenu.html">Back to Dashboard</a>
+                <a class="btn" href="index.html">Log Out</a>
+            </div>
+        </div>
+
+        <!-- LANDING PAGE -->
+        <table border="1" align="center" style="float: left; width: 40%; height: 50%; margin: 1% 5%">
+            <caption>Doctor/Counselor Names</caption>
+            <tr>
+                <th>Doctor ID</th>
+                <th>Doctor Name</th>
+                <th>Contact No</th>
+                <th>Online Fees</th>
+                <th>COVID Treatment</th>
+                <th>Designation</th>
+            </tr>
+            <tr>
+                <td>D1</td>
+                <td class="d_name"  value="Dr. Deepak Jha">Dr. Deepak Jha</td>
+                <td>9834327463</td>
+                <td>500</td>
+                <td>Yes</td>
+                <td>Doctor</td>
+            </tr>
+            <tr>
+                <td>D2</td>
+                <td class="d_name"  value="Dr. Geeta Grewal">Dr. Geeta Grewal</td>
+                <td>9746348763</td>
+                <td>550</td>
+                <td>Yes</td>
+                <td>Doctor</td>
+            </tr>
+            <tr>
+                <td>D3</td>
+                <td class="d_name"  value="Dr. Rajiv Bajaj">Dr. Rajiv Bajaj</td>
+                <td>9846536674</td>
+                <td>410</td>
+                <td>Yes</td>
+                <td>Doctor</td>
+            </tr>
+            <tr>
+                <td>D4</td>
+                <td class="d_name" value="Dr. Shubhangi Lokhan">Dr. Shubhangi Lokhan</td>
+                <td>9832635627</td>
+                <td>500</td>
+                <td>Yes</td>
+                <td>Doctor</td>
+            </tr>
+            <tr>
+                <td>D5</td>
+                <td class="d_name"  value="Dr. Narendra Yadav">Dr. Narendra Yadav</td>
+                <td>9836372367</td>
+                <td>500</td>
+                <td>Yes</td>
+                <td>Doctor</td>
+            </tr>
+            <tr>
+                <td>C1</td>
+                <td class="c_name">Susan Blackmore</td>
+                <td>9865645478</td>
+                <td>1000</td>
+                <td>Yes</td>
+                <td>Counsellor</td>
+            </tr>
+            <tr>
+                <td>C2</td>
+                <td class="c_name">Michael Posner</td>
+                <td>9746875748</td>
+                <td>2900</td>
+                <td>Yes</td>
+                <td>Counsellor</td>
+            </tr>
+            <tr>
+                <td>C3</td>
+                <td class="c_name">Dr. Rajiv Bajaj</td>
+                <td>9846536674</td>
+                <td>4410</td>
+                <td>Yes</td>
+                <td>Counsellor</td>
+            </tr>
+            <tr>
+                <td>C4</td>
+                <td class="c_name">Dr. Shubhangi Lokhan</td>
+                <td>9832635627</td>
+                <td>2500</td>
+                <td>Yes</td>
+                <td>Counsellor</td>
+            </tr>
+            <tr>
+                <td>C5</td>
+                <td class="c_name">Dr. Narendra Yadav</td>
+                <td>9836372367</td>
+                <td>5000</td>
+                <td>Yes</td>
+                <td>Counsellor</td>
+            </tr>
+        </table>
+        
+
+        
+
+        <div class="wrapper" style="box-shadow: 4px 30px 50px rgba(0, 0, 0, 0.1); float: right; margin: 5% 3% 5% 0%">
+            
+        <h2><u>Appointment Form</u></h2>
+        <div class=" form-conteniar">
+            <form method="post" action="Appointservlet">
+            	<div class="input-name">
+                    	<i class="fa fa-user email"></i>
+                    	<input type="text" name="patientname" placeholder="Patient's name" required class="text-name">
+                	</div>
+                	<div class="input-name">
+                    	<i class="fa fa-user email"></i>
+                    	<input type="number" name="contact" placeholder="Contact No." required class="text-name">
+                	</div>
+                <div class="input-name">
+                    <p>Appointment For :</p>
+                    <i class="fa fa-user-md email"></i>
+                    <select name="appoint" class="text-name" id="appoint" required onchange="getNames()">
+                    	<option disabled selected>----Select a Category----</option>
+                    	<option value="Doctor">Doctor Check Up</option>
+                    	<option value="Counsellor">Counselling</option>
+                    </select>
+                </div>
+                <div class="input-name">
+                	<p id="text"></p>
+                    <!--i class="fa fa-user email"></i-->
+                    <select class="text_name" id="names"></select>
+                    <!--input type="text" name="doctor-name" placeholder="Name of Doctor/Counsellor" required class="text-name"-->
+                </div>
+                <div class="input-name">
+                	<p>Date of Appointment: </p>
+                    <i class="fa fa-phone email"></i>
+                    <input type="date" name="doa" placeholder="Date of Appointment" required class="text-name">
+                </div>
+                <div class="input-name">
+                	<p>Timing of Appointment: </p>
+                    <i class="fa fa-user email"></i>
+                    <input type="time" name="time" placeholder="Timing" required class="text-name">
+                </div>
+                <!--div class="form-group"-->
+                    <!--input type="button" onclick="location.href='index.html';" value="Go Back" class="btn login_btn" style="margin-right: 10px;"-->
+                    <input type="submit" value="Book an Appointment" onclick="appointment()" class="button float-right login_btn">
+                <!--/div-->
+
+                <!--div class="d-flex justify-content-center links">
+                    Existing User ?<a href="login.html">Login</a>
+                </div-->
+            </form>
+        </div>
+    </div>
+
+    <br><br>
+
+        <div class="footer" style="clear: both">
+            <h2>Phoenix HealthCare</h2>
+      <div class="footerlinks">
+        <a href="#" class="mainlink">Covid-19 Updates</a>
+        <a href="#">Help</a>
+        <a href="#">About</a>
+        <a href="#">Contact Us</a>
+        <a href="index.html">Log Out</a>
+      </div>
+        </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+            AOS.init();
+    </script>
+</body>
+<script>
+    function getNames()
+    {
+        dropdown = document.getElementById("appoint")
+        name_dropdown = document.getElementById("names")
+        len = name_dropdown.options.length
+        if(len==0)
+            { }
+        else{
+            for(i=len-1;i>=0;i--)
+            {
+                name_dropdown.options[i]=null
+            }
+        }
+        var getvalue = dropdown.value;
+        if(getvalue=="Doctor")
+        {
+        	text = document.getElementById("text")
+        	text.innerHTML = "Names of Doctor: "
+            doc_names = document.getElementsByClassName("d_name")
+            for(var i=0;i<doc_names.length;i++)
+            {
+                option = document.createElement("option");
+                option.text = document.getElementsByClassName("d_name")[i].innerHTML
+                names.add(option)
+            }
+        }else{
+            //alert("Counselling")
+            text = document.getElementById("text")
+        	text.innerHTML = "Names of Counsellor: "
+            var counsellor_names = document.getElementsByClassName("c_name")
+            for(var i=0;i<counsellor_names.length;i++)
+            {
+                //alert(counsellor_names[i].value)
+                //name_dropdown[i].value = counsellor_names[i].text
+                option = document.createElement("option");
+                option.text = document.getElementsByClassName("c_name")[i].innerHTML
+                names.add(option)
+            }
+        }  
+    }
+    function appointment()
+    {
+    	alert("Appointment Scheduled");
+    }
+</script>
+</html>

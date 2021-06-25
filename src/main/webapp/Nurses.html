@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HealthCare</title>
+  <link rel="stylesheet" href="mainmenu.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="nav">
+      <div class="logo">
+        <h4>Phoenix HealthCare</h4>
+      </div>
+      <div class="links">
+        <a href="#" class="mainlink">Covid-19 Updates</a>
+        <a href="#">Help</a>
+        <a href="#">About</a>
+        <a href="#">Contact Us</a>
+        <a class="btn" href="MainMenu.html">Back to Dashboard</a>
+        <a class="btn" href="index.html">Log Out</a>
+      </div>
+    </div>
+
+
+    <!-- LANDING PAGE -->
+
+    <html>
+
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Add icon library -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <style>
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+          box-sizing: border-box;
+        }
+
+        .input-container {
+          display: -ms-flexbox;
+          /* IE10 */
+          display: flex;
+          width: 100%;
+          margin-bottom: 15px;
+        }
+
+        .icon {
+          padding: 10px;
+          background: rgb(184, 93, 18);
+          color: rgb(202, 200, 200);
+          min-width: 50px;
+          text-align: center;
+        }
+
+        .input-field {
+          width: 100%;
+          padding: 10px;
+          outline: none;
+        }
+
+        .input-field:focus {
+          border: 2px solid rgba(9, 141, 119, 0.692);
+        }
+
+        /* Set a style for the submit button */
+        .btn {
+          background-color: rgb(39, 107, 45);
+          color: rgb(223, 232, 236);
+          padding: 15px 20px;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+          opacity: 0.9;
+        }
+
+        .btn:hover {
+          opacity: 1;
+        }
+      </style>
+    </head>
+
+    <body>
+
+      <form name="myForm" method="post" action="Nurseservlet" style="max-width:500px;margin:auto">
+        <h2 style="text-align: center;">Nurse / HealthCare Worker Hiring Form</h2>
+
+        <div class="input-container">
+          <i class="fa fa-user icon"></i>
+          <input class="input-field" type="text" required placeholder="Patient Name" name="nm">
+        </div>
+        <div class="input-container">
+          <i class="fa fa-mobile-phone icon"></i>
+          <input class="input-field" type="number" placeholder="Contact No." name="phn">
+        </div>
+        <div class="input-container">
+          <i class="fa fa-address-card icon"></i>
+          <input class="input-field" type="text" placeholder="Address" name="add">
+        </div>
+        
+        <div class="input-container">
+			<i class="fa fa-hospital-o icon"></i> <select name="nur"
+				class="text-name" id="bed" required onchange="getAvail()"
+				style="width: 100%">
+				<option disabled selected>------ Nurses / Healthcare ------</option>
+				<option value="C3 Home healthcare">	C3 Home healthcare </option>
+				<option value="Adi Home Health Care">Adi Home Health Care </option>
+				<option value="Nurse & Aya Centre(BSP)">Nurse & Aya Centre(BSP)</option>
+				<option value="Nayan-Moni Security Service">Nayan-Moni Security Service</option>
+				<option value="Problem Solve Org">Problem Solve Organisation</option>
+			</select>
+		</div>
+        
+        <div class="input-container">
+          <i class="fa fa-firefox icon"></i>
+          <input class="input-field" type="text" placeholder="Patient's Disease" name="dis">
+        </div>
+        <div class="input-container">
+          <i class="fa fa-clock-o icon"></i>
+          <input class="input-field" type="text" placeholder="Working Hours" name="t1">
+        </div>
+
+        <button type="submit" onclick="book()" class="btn">Hire Now</button>
+      </form>
+
+
+
+    </body>
+
+    </html>
+
+
+    <!-- BANNER AND FOOTER -->
+
+    <br>
+    <br> <br> <br>
+
+       <div class="footer">
+         <h2>Phoenix HealthCare</h2>
+         <div class="footerlinks">
+             <a href="#" class="mainlink">Covid-19 Updates</a>
+             <a href="#">Help</a>
+             <a href="#">About</a>
+             <a href="#">Contact Us</a>
+             <a href="index.html">Log Out</a>
+         </div>
+     </div>
+  </div>
+
+  <script>
+    function book() {
+   	 var x = document.forms["myForm"]["nm"].value;
+	  if (x == "") 
+	    alert("Fill Up the form");
+	  else
+ 	alert("Booking Confirmed!!");
+    }
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
