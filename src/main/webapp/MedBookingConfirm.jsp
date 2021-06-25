@@ -79,8 +79,8 @@ button {
 			</tr>
 								<%
 		try {
-		Class.forName("oracle.jdbc.driver.OracleDriver");
-		Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE", "MYDB", "admin");
+		String connectionUrl = System.getenv("JDBC_DATABASE_URL");
+		Connection con=DriverManager.getConnection(connectionUrl);
 		if (con == null)
 			out.println("connect not created");
 		Statement st = con.createStatement();
