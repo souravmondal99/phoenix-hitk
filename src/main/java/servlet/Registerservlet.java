@@ -176,6 +176,7 @@ public class Registerservlet extends HttpServlet {
 						
 						out.println("no record inserted!");
 				}
+			con.close();
 		}
 		catch(Exception e)
 		{
