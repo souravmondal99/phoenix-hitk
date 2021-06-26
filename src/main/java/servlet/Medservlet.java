@@ -71,6 +71,7 @@ public class Medservlet extends HttpServlet {
 						
 						out.println("no record inserted!");
 				}
+			con.close();
 		}
 		catch(Exception e)
 		{
