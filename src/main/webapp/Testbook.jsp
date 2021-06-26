@@ -131,6 +131,7 @@ body {
 
 	<%
 		}
+		con.close();
 
 	} catch (Exception e) {
 		e.printStackTrace();
@@ -169,6 +170,7 @@ body {
 			</tr>
 			<%
 				}
+				con.close();
 
 			} catch (Exception e) {
 				e.printStackTrace();
