@@ -65,6 +65,7 @@ public class Appointservlet extends HttpServlet {
 						
 						out.println("no record inserted!");
 				}
+			con.close();
 		}
 		catch(Exception e)
 		{
