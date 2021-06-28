@@ -156,7 +156,7 @@
             
         <h2><u>Appointment Form</u></h2>
         <div class=" form-conteniar">
-            <form method="post" action="Appointservlet">
+            <form name="myForm" method="post" action="Appointservlet">
             	<div class="input-name">
                     	<i class="fa fa-user email"></i>
                     	<input type="text" name="patientname" placeholder="Patient's name" required class="text-name">
@@ -263,7 +263,11 @@
     }
     function appointment()
     {
-    	alert("Appointment Scheduled");
+    	 var x = document.forms["myForm"]["patientname"].value;
+	  if (x == "") 
+	    alert("Fill Up the form");
+	  else
+ 	    alert("Booking Confirmed!!");
     }
 </script>
 </html>
