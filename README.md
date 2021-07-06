@@ -6,7 +6,7 @@ A web Application where patient can:
 *Register with the government for disease demographics and control.
 
 Front-end: HTML,CSS,JAVASCRIPT,FLEX.
-BACK-END: JDBC,JSP,SERVLET.
+BACK-END: JDBC,JSP,SERVLET
 DATABASE: ORACLE 11g express edition / PostgreSQL.
 Deployed In: Heroku Cloud Service
 Link: https://phoenix-healthcare-sm.herokuapp.com/
