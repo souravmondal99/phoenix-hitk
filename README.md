@@ -5,6 +5,10 @@ A web Application where patient can:
 *Connect with vendors in fulfilling their necessities towards recovery such as pharmaceuticals, food, utilities, essentials (oxygen, blood, etc.), ambulance, etc.<br />
 *Register with the government for disease demographics and control.
 
+![App Screenshot](https://github.com/souravmondal99/phoenix-hitk/blob/main/Images/Homepage.png)
+![App Screenshot](https://github.com/souravmondal99/phoenix-hitk/blob/main/Images/Main%20Menu.png)
+![App Screenshot](https://github.com/souravmondal99/phoenix-hitk/blob/main/Images/Emergency.png)
+
 Front-end: HTML,CSS,JAVASCRIPT,FLEX.<br />
 BACK-END: JDBC,JSP,SERVLET<br />
 DATABASE: ORACLE 11g express edition / PostgreSQL.<br />
